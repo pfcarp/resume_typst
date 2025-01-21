@@ -93,17 +93,18 @@ potentially provide a transparent memory profiler for offboard analysis.
 #v(3mm)
 #list(
   marker: ">",
-  "Robust Autonomous control for energy constrained quadrapeds proposal" + block[#move(dy: -.75em)[#line(length: 35em, stroke: (dash:"dotted"))]] + v(-4mm) +
+  "Effiecient control for energy constrained quadrapeds proposal"+block[#move(dy: -.75em)[#line(length: 35em, stroke: (dash:"dotted"))]] + v(-4mm) +
   block(
     list(marker: "",
-      ""
+      emph("PIs: Prof. Sabrina Neuman, Prof. Renato Mancuso"),
+      "NSF-medium proposal aiming to enable a new class of low cost, power-efficient robots through improving neural network control for under-instrumented limbed robots, exploration hardware/software co-designing techniques for energy-efficient control, and designing efficient learned runtime adaptation techniques on constrained platforms"
     )
   )+v(2mm),
   "(TII) Genzero Proposal"+ block[#move(dy: -.75em)[#line(length: 15em, stroke: (dash:"dotted"))]] + v(-4mm)+
   block(
-    list(marker: "TODO",
-      "Joint between PhD candidates from Boston University,
-University of Minho, and Technical University of Munich to develop zero trust framework for multi-party confidential computing. The proposal was accepted and the team was awarded the Best Presentation Award."
+    list(marker: "",
+      emph("PIs: Benjamin Lubin, Marco Caccamo, Sandro Pinto, Renato Mancuso"),
+      "Joint effort between PhD candidates from Boston University, University of Minho, and Technical University of Munich to develop zero trust framework for multi-party confidential computing. Contributed to proposal development and creation of a successful prototype demonstration.The proposal was accepted and the team was awarded the Best Presentation Award."
     )
   )
 )
