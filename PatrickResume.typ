@@ -28,7 +28,7 @@
     h(10mm),  // indent for the second line
     grid(
       columns: (1fr, auto),
-      align(left, text(weight: "bold")[#role]),
+      align(left), text(weight: "bold")[#role]),
       align(right, text(style: "italic")[#institution])
     )
   )
