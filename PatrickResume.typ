@@ -19,25 +19,18 @@
   grid(
     columns: (auto, 1fr),
     gutter: .5em,
-    align(left,text(weight:"bold",[#role])), align(right, text(style: "italic")[#location])
-    
-  )
-  grid(
-    columns: (auto, 1fr),
-    gutter: .5em,
-    h(10mm),  // indent for the second line
+    date,
     grid(
       columns: (1fr, auto),
-      align(left, [#date]),
-      align(right, text(style: "italic")[#institution])
+      {h(2mm)+text(weight: "bold")[#role]+ " "+ h(4mm)+ text(style: "italic")[#institution]},
+      text[#location]
     )
   )
-  block[#move(dy: -.75em)[#line(length: 28em, stroke: (dash:"dotted"))]]
+  block[#move(dy: -.75em)[#line(length: 50.5em, stroke: (dash:"dotted"))]]
   if details != none {
-    move( list(indent: 1em, marker: "•", ..details) ,dy: -1.5em)
+    move( list(indent: 1em, marker: "•", ..details) ,dy: -1em)
   }
-  
-  v(-4mm)
+  v(-6mm)
 }
 
 #let otherEntry(date, institution, role, location, details) = {
@@ -60,7 +53,7 @@
 #show link: it => text(rgb("#2b3ac5"), it)
 
 #resume[
-#grid(
+   #grid(
   columns: (1fr, 1fr),
   gutter: 24pt,
   [
@@ -87,13 +80,10 @@
            "Bachelors of Arts in Physics", "MA, USA", none)
     #otherEntry("2012 - 2016", link("https://www.bchigh.edu/")[Boston College High School], 
            "High School Diploma", "MA, USA", none)
-  ]
-)
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 10pt,
-[
+  ])
+  #v(-5mm)
   = Publications & Presentations
+  #v(-2mm)
 #block[International Conference & Workshop Papers #h(2em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
 #v(-5mm)#list(marker: "•")[
   Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. Low-Overhead Online Assessment of Timely Progress as a System Commodity. #link("https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2023.13")[ECRTS]
@@ -103,9 +93,7 @@
 #v(-5mm)#list(marker: "•")[
   Shahin Roozkhosh, Bassel El Mabsout, Cristiano Rodrigues, *Patrick Carpanedo*, Denis Hoornaert, Su Min Tan, Benjamin Lubin, Marco Caccamo, Sandro Pinto, and Renato Mancuso. Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing. In 2024 Technology Innovation Institute (TII) GENZERO Workshop.
 ]
-],
-
-[
+#v(-2mm)
 = Notable Research
 #v(-2mm)
 #list(
@@ -124,13 +112,9 @@
   )
 )
 
-])
 
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 24pt,
-  [
-    = Research Positions
+
+   = Research Positions
     #entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student", "Boston, MA, USA", (
     "Researched and implemented AXI over Ethernet, integrated hardware for program phase evaluation, and maintained CPS Lab servers (e.g., MegaMind and Proxmox Cluster) to support research, collaboration, and access to development resources. Participated in pseudo-TPC meetings to review papers with the Lead P.I. and volunteered to mentor students in directed studies within the lab.",
     ))
@@ -138,8 +122,6 @@
       "Research Assistant", "Worcester, MA, USA", (
       "Research Assistant responsible for assembling and verifying subsystems of the Beam Profile Monitor (BPM) system, ensuring electrical tolerances and timings. Debugged the BPM system through experiments, logging findings for the Lead P.I., and facilitated weekly presentations and discussions with different research groups.",
     ))
-  ],
-  [
     = Teaching and Mentoring
     #entry("Spring 2024 - Ongoing", link("https://www.bu.edu/")[Boston University], 
            "F1Tenth Study Mentor", "Boston, MA, USA", (
@@ -154,38 +136,10 @@
            "PL-Ethernet Study Mentor", "Boston, MA, USA", (
       "Taught Vivado Design Suite basics and FPGA functionality, delegated tasks for debugging FPGA-to-Processor Ethernet connectivity, and facilitated weekly meetings to evaluate undergraduate progress and goals.",
     ))
-  ]
-)
 
-// #grid(
-//   columns: (1fr),
-//   [
-//     = Professional Experience
-//     #entry("2019-2020", link("https://www.holycross.edu/academics/programs/theatre-and-dance/opportunities/alternate-college-theatre")[Alternate College Theatre], 
-//            "Student Technical Director", "Worcester, MA, USA", (
-//       "Collaborated with the college technical director and student scene designer to construct sets",
-//       "Created schematics to follow when cutting lumber and assembling pieces of the set",
-//       "Coordinated groups of students on tasks to assemble and furnish sets",
-//       "Communicated with directors and set designers on progress of set and accommodated any desired details or changes"
-//     ))
-//     #entry("2019-2020", link("https://www.holycross.edu/academics/programs/theatre-and-dance/facilities")[College of the Holy Cross Fenwick Theatre], 
-//            "Shop Assistant", "Worcester, MA, USA", (
-//       "Assisted in creating sets for the department plays by following a schematic, manufacturing, and assembling components, and compensating for any error along the way",
-//       "Guided assistants on correct use of tools and provided advanced techniques to address certain cases",
-//       "Relayed instructions from Technical Director to sub group(s)",
-//       "Provided assistance to other technical teams within the theatre"
-//     ))
-//     #entry("Fall 2017-2019", link("https://www.holycross.edu/campus-life/housing")[College of the Holy Cross], 
-//            "Resident Assistant", "Worcester, MA, USA", (
-//       "Acted as a resource to and ensured the safety of 38 students in their residence hall",
-//       "Planned events with Resident Assistant team members for residents and building",
-//       "Performed safety checks and engaged with residents throughout the semester",
-//       "Relayed information bi-weekly regarding the dormitory and residents in a concise manner to dormitory supervisor"
-//     ))
-//   ]
-// )
 
 = Skills
+#v(-3mm)
 #list(marker: "•", 
   [*Programming:* C, C++, Java, Python, SQL],
   [*Design:* System Verilog, Verilog, CAD, PCB design, Carpentry, Additive/Subtractive Fabrication],
