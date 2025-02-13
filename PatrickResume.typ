@@ -19,7 +19,7 @@
   grid(
     columns: (auto, 1fr),
     gutter: .5em,
-    align(left,date), align(right, text(style: "italic")[#location])
+    align(left,text(weight:"bold",[#role])), align(right, text(style: "italic")[#location])
     
   )
   grid(
@@ -28,7 +28,7 @@
     h(10mm),  // indent for the second line
     grid(
       columns: (1fr, auto),
-      align(left), text(weight: "bold")[#role]),
+      align(left, [#date]),
       align(right, text(style: "italic")[#institution])
     )
   )
@@ -142,7 +142,7 @@
   [
     = Teaching and Mentoring
     #entry("Spring 2024 - Ongoing", link("https://www.bu.edu/")[Boston University], 
-           "F1Tenth Directed Study Mentor", "Boston, MA, USA", (
+           "F1Tenth Study Mentor", "Boston, MA, USA", (
       "Assisting undergraduates with F1Tenth hardware projects, teaching electronic design basics, and ensuring safe handling of high-current and sensitive electronics.",
     ))
  
@@ -151,7 +151,7 @@
       "Developed mentoring skills, led group and individual sessions with undergraduates to create PoV Display hardware/software modules, sourced and verified components, and trained students in academic research methods.",
     ))
     #entry("Spring 2023", link("https://www.bu.edu/")[Boston University], 
-           "PL-Ethernet Directed Study Mentor", "Boston, MA, USA", (
+           "PL-Ethernet Study Mentor", "Boston, MA, USA", (
       "Taught Vivado Design Suite basics and FPGA functionality, delegated tasks for debugging FPGA-to-Processor Ethernet connectivity, and facilitated weekly meetings to evaluate undergraduate progress and goals.",
     ))
   ]
