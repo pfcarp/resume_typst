@@ -110,7 +110,7 @@ potentially provide a transparent memory profiler for offboard analysis.
 )
 
 = Research Positions
-#entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student", "Boston, MA, USA", (
+#entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
 "Researching and implementing methods for allowing AXI over Ethernet", 
 "Integration of hardware infrastructure to evaluate and measure phases in an executing program",
 "Assembling and maintaining servers (e.g. MegaMind and Proxmox Cluster) for CPS Lab use to facilitate research and collaboration and ease the access to development boards and related software",
@@ -157,6 +157,7 @@ potentially provide a transparent memory profiler for offboard analysis.
   "Assisting undergraduates understand and debug the gap between code and physical outputs",
   "Customizing the circuit layout for additional features or corrections from previous student attempts"
 ))
+#v(50mm)
 
 #entry("Fall 2023", link("https://cra.org/ur2phd/")[Computing Research Association], 
        "UR2PhD Mentor", link("https://www.bu.edu/cs/engage/ur2phd/")[Boston University], (

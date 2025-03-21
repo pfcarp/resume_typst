@@ -74,7 +74,7 @@
   ],
   [
     = Education
-    #otherEntry("2021 - Present", link("https://www.bu.edu/")[Boston University], 
+    #otherEntry("2021 - Expected 2025", link("https://www.bu.edu/")[Boston University], 
            "Master's Computer Science", "MA, USA", none)
     #otherEntry("2016 - 2020", link("https://www.holycross.edu/")[College of the Holy Cross], 
            "Bachelors of Arts in Physics", "MA, USA", none)
@@ -115,7 +115,7 @@
 
 
    = Research Positions
-    #entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student", "Boston, MA, USA", (
+    #entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
     "Researched and implemented AXI over Ethernet, integrated hardware for program phase evaluation, and maintained CPS Lab servers (e.g., MegaMind and Proxmox Cluster) to support research, collaboration, and access to development resources. Participated in pseudo-TPC meetings to review papers with the Lead P.I. and volunteered to mentor students in directed studies within the lab.",
     ))
     #entry("Summer 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
