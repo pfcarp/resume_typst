@@ -1,7 +1,8 @@
 #let cv(body) = {
   set document(author: "Patrick Carpanedo", title: "CV")
-  set page(paper: "us-letter", margin: (x: 10mm, y: 10mm))
-  set text(font: "New Computer Modern", size: 11pt)
+  //set page(paper: "us-letter", margin: (x: 10mm, y: 10mm))
+  set page(paper: "us-letter", margin: (right: 1in, top: 1.5in, left: 1.5in))
+  set text(font: "New Computer Modern", size: 12pt)
   body
 }
 
@@ -10,37 +11,34 @@
  v(-2mm)
  set text(weight: "bold")
  set block(below: -0.25em)
- block[#it.body #h(2em) #move(dy: -1em)[#line(length: 35em, stroke: 0.5pt)]]
+ block[#it.body #h(2em) #move(dy: -1em)[#line(length: 100% , stroke: 0.5pt)]]
  v(.5mm)
  
 }
 
 #let entry(date, institution, role, location, details) = {
-  grid(
-    columns: (auto, 1fr),
-    gutter: .5em,
-    date,
-    grid(
-      columns: (1fr, auto),
-      {h(2mm)+text(weight: "bold")[#role]+ " "+ h(4mm)+ text(style: "italic")[#institution]},
-      text[#location]
-    )
+  block(breakable: false)[
+  #grid(
+    columns: (4),
+    gutter:(2%),
+    text[#date], text(weight: "bold")[#role], text(style: "italic")[#institution] ,text[#location]
   )
-  block[#move(dy: -.75em)[#line(length: 50.5em, stroke: (dash:"dotted"))]]
-  if details != none {
-    move( list(indent: 1em, marker: "•", ..details) ,dy: -1em)
+  #move(dy: -1%)[#line(length: 100%, stroke: (dash:"dotted"))]
+  #if details != none {
+    move( list(indent: 1em, marker: "•", ..details) ,dy: -1%)
   }
-  v(-5mm)
+  #v(-1%)
+  ]
 }
 
 #let otherEntry(date, institution, role, location, details) = {
   grid(
     columns: (auto, 1fr),
-    gutter: .5em,
+    gutter: 1%,
     date,
     grid(
       columns: (1fr, auto),
-      {text(weight: "bold")[#role]+ " "+ text(style: "italic")[#institution]},
+      {text(weight: "bold")[#role] + text(style: "italic")[#institution]},
       text[#location]
     )
   )
@@ -93,19 +91,22 @@ potentially provide a transparent memory profiler for offboard analysis.
 #v(3mm)
 #list(
   marker: ">",
+  block(breakable: false,
   "Effiecient control for energy constrained quadrapeds proposal"+block[#move(dy: -.75em)[#line(length: 35em, stroke: (dash:"dotted"))]] + v(-4mm) +
   block(
     list(marker: "",
       emph("PIs: Prof. Sabrina Neuman, Prof. Renato Mancuso"),
       "NSF-medium proposal aiming to enable a new class of low cost, power-efficient robots through improving neural network control for under-instrumented limbed robots, exploration hardware/software co-designing techniques for energy-efficient control, and designing efficient learned runtime adaptation techniques on constrained platforms"
     )
-  )+v(2mm),
+  ))+v(2mm),
+  block(breakable: false,
   "(TII) Genzero Proposal"+ block[#move(dy: -.75em)[#line(length: 15em, stroke: (dash:"dotted"))]] + v(-4mm)+
   block(
     list(marker: "",
       emph("PIs: Benjamin Lubin, Marco Caccamo, Sandro Pinto, Renato Mancuso"),
       "Joint effort between PhD candidates from Boston University, University of Minho, and Technical University of Munich to develop zero trust framework for multi-party confidential computing. Contributed to proposal development and creation of a successful prototype demonstration.The proposal was accepted and the team was awarded the Best Presentation Award."
     )
+  )
   )
 )
 
@@ -129,17 +130,20 @@ potentially provide a transparent memory profiler for offboard analysis.
 #v(3mm)
 #list(
   marker: ">",
+  block(breakable: false,
   "AXI over Ethernet" + block[#move(dy: -.75em)[#line(length: 15em, stroke: (dash:"dotted"))]] + v(-4mm) +
   block(
     list(marker: "",
       "This work revolves around using Programmable Logic to export bus-level memory transactions packed into an Ethernet frame and sent through dedicated low-latency high-bandwidth external optical interfaces. This would allow for methods such as Control Flow Integrity checks, Digital Twinning, and Remote Memory Access to happen transparently without code/kernel instrumentation. In the future, the work will be expanded to handle coherent bus traffic that is architecture agnostic."
     )
-  )+v(2mm),
+  ))+v(2mm),
+  block(breakable: false,
   "Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing"+ block[#move(dy: -.75em)[#line(length: 45em, stroke: (dash:"dotted"))]] + v(-4mm)+
   block(
     list(marker: "",
       "This work tackles the gap in existing safeguarding technology by avoiding byte-level decryption until it is immediately fetched by the processor, only to burn it right after. We perform on-the-fetch data decryption, immediately followed by burning, i.e., erasing right after processing cycles. Thus, BFX minimizes the existence of sensitive data in-use. BFX does not demand new processing hardware units nor requires restructuring application software."
     )
+  )
   )
 )
 
@@ -157,7 +161,6 @@ potentially provide a transparent memory profiler for offboard analysis.
   "Assisting undergraduates understand and debug the gap between code and physical outputs",
   "Customizing the circuit layout for additional features or corrections from previous student attempts"
 ))
-#v(50mm)
 
 #entry("Fall 2023", link("https://cra.org/ur2phd/")[Computing Research Association], 
        "UR2PhD Mentor", link("https://www.bu.edu/cs/engage/ur2phd/")[Boston University], (
@@ -177,11 +180,11 @@ potentially provide a transparent memory profiler for offboard analysis.
 = Affiliations
 #grid(
   columns: 2,
-  gutter: 8cm,
-  h(1cm)+[#link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab]],
+  gutter: 1fr,
+  [#link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab]],
   [#link("http://alterbytecorp.com/")[Alter Byte Corp]]
 )
-#v(5mm)
+#v(1mm)
 
 
 
@@ -220,13 +223,14 @@ potentially provide a transparent memory profiler for offboard analysis.
 )
 
 = Skills
+#block(breakable: false)[
 #list(marker: "•", 
   [*Programming:* C, C++, Java, Python, SQL],
   [*Design:* System Verilog, Verilog, CAD, PCB design, Carpentry, Additive/Subtractive Fabrication],
   [*Hardware Debugging:* Xilinx Integrated Logic Analyzer, ARM Coresight, Circuit Debugging],
   [*System Administration:* Network Architecture, Virtual Machine Management]
 )
-
+]
 = Languages
 #grid(
   columns: 3,
