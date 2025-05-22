@@ -7,8 +7,8 @@
 
 
 #show heading: it => {
- v(-2mm)
- set text(weight: "bold")
+ v(-1mm)
+ set text(weight: "bold",size: .8em)
  set block(below: -0.25em)
  block[#it.body #h(2em) #move(dy: -1em)[#line(length: 35em, stroke: 0.5pt)]]
  v(.5mm)
@@ -16,21 +16,18 @@
 }
 
 #let entry(date, institution, role, location, details) = {
-  grid(
-    columns: (auto, 1fr),
-    gutter: .5em,
-    date,
-    grid(
-      columns: (1fr, auto),
-      {h(2mm)+text(weight: "bold")[#role]+ " "+ h(4mm)+ text(style: "italic")[#institution]},
-      text[#location]
-    )
+  block(breakable: false)[
+  #grid(
+    columns: (4),
+    gutter:(2%),
+    text[#date], text(weight: "bold")[#role], text(style: "italic")[#institution] ,text[#location]
   )
-  block[#move(dy: -.75em)[#line(length: 50.5em, stroke: (dash:"dotted"))]]
-  if details != none {
-    move( list(indent: 1em, marker: "•", ..details) ,dy: -1em)
+  #move(dy: -1%)[#line(length: 100%, stroke: (dash:"dotted"))]
+  #if details != none {
+    move( list(indent: 1em, marker: "•", ..details) ,dy: -1.75%)
   }
-  v(-6mm)
+  #v(-2.25%)
+  ]
 }
 
 #let otherEntry(date, institution, role, location, details) = {
@@ -74,7 +71,7 @@
   ],
   [
     = Education
-    #otherEntry("2021 - Expected 2025", link("https://www.bu.edu/")[Boston University], 
+    #otherEntry("2021 - 2025", link("https://www.bu.edu/")[Boston University], 
            "Master's Computer Science", "MA, USA", none)
     #otherEntry("2016 - 2020", link("https://www.holycross.edu/")[College of the Holy Cross], 
            "Bachelors of Arts in Physics", "MA, USA", none)
@@ -85,15 +82,17 @@
   = Publications & Presentations
   #v(-2mm)
 #block[International Conference & Workshop Papers #h(2em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
-#v(-5mm)#list(marker: "•")[
-  Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. Low-Overhead Online Assessment of Timely Progress as a System Commodity. #link("https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2023.13")[ECRTS]
-]
+#v(-6mm)#list(marker: "•", spacing:0.75em,
+  [Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. _*Low-Overhead Online Assessment of Timely Progress as a System Commodity*_. https://doi.org/10.4230/LIPIcs.ECRTS.2023.13],
 
-#block[Presentation #h(2em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
-#v(-5mm)#list(marker: "•")[
+  [Francesco Ciraolo, Mattia Nicolella, *Patrick Carpanedo*, Denis Hoornaert, Marco Caccamo, and Renato Mancuso. 2025. _*Surgical Software-less I/O Virtualization*_. https://doi.org/10.1145/3722567.3727847]
+)
+#v(-1mm)
+#block[Presentation #h(1em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
+#v(-6mm)#list(marker: "•")[
   Shahin Roozkhosh, Bassel El Mabsout, Cristiano Rodrigues, *Patrick Carpanedo*, Denis Hoornaert, Su Min Tan, Benjamin Lubin, Marco Caccamo, Sandro Pinto, and Renato Mancuso. Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing. In 2024 Technology Innovation Institute (TII) GENZERO Workshop.
 ]
-#v(-2mm)
+#v(-1mm)
 = Notable Research
 #v(-2mm)
 #list(

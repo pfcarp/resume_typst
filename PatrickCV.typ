@@ -1,7 +1,7 @@
 #let cv(body) = {
   set document(author: "Patrick Carpanedo", title: "CV")
-  //set page(paper: "us-letter", margin: (x: 10mm, y: 10mm))
-  set page(paper: "us-letter", margin: (right: 1in, top: 1.5in, left: 1.5in))
+  set page(paper: "us-letter", margin: (x: 10mm, y: 10mm))
+  //set page(paper: "us-letter", margin: (right: 1in, top: 1.5in, left: 1.5in))
   set text(font: "New Computer Modern", size: 12pt)
   body
 }
@@ -32,17 +32,23 @@
 }
 
 #let otherEntry(date, institution, role, location, details) = {
-  grid(
-    columns: (auto, 1fr),
-    gutter: 1%,
-    date,
-    grid(
-      columns: (1fr, auto),
-      {text(weight: "bold")[#role] + text(style: "italic")[#institution]},
-      text[#location]
-    )
-  )
+  // grid(
+  //   columns: (auto, 1fr),
+  //   gutter: 1%,
+  //   date,
+  //   grid(
+  //     columns: (1fr, auto),
+  //     {text(weight: "bold")[#role] + text(style: "italic")[#institution]},
+  //     text[#location]
+  //   )
+  // )
   //block[#move(dy: -1em)[#line(length: 50.5em, stroke: (dash:"dotted"))]]
+  grid(
+    columns: (4),
+    gutter:(2%),
+    text[#date], text(weight: "bold")[#role], text(style: "italic")[#institution] ,text[#location]
+  ) 
+  
   if details != none {
     move( list(indent: 1em, marker: "•", ..details) ,dy: -1em)
   }
@@ -64,7 +70,7 @@
 ]
 #v(-5mm)
 = Education
-#otherEntry("2021 - Present", link("https://www.bu.edu/")[Boston University], 
+#otherEntry("2021 - 2025", link("https://www.bu.edu/")[Boston University], 
        "Master's Computer Science", "MA, USA", none)
 #otherEntry("2016 - 2020", link("https://www.holycross.edu/")[College of the Holy Cross], 
        "Bachelors of Arts in Physics", "MA, USA", none)
@@ -78,13 +84,15 @@ to promote safety, efficiency, and verifiability. Currently, focused on novel us
 potentially provide a transparent memory profiler for offboard analysis.
 = Publications & Presentations
 #block[International Conference & Workshop Papers #h(2em) #move(dy: -1em)[#line(length: 35em, stroke: (dash: "dotted"))]]
-#v(-5mm)#list(marker: "•")[
-  Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. Low-Overhead Online Assessment of Timely Progress as a System Commodity. In 35th Euromicro Conference on Real-Time Systems (ECRTS 2023). Leibniz International Proceedings in Informatics (LIPIcs), Volume 262, pp. 13:1-13:26, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2023) https://doi.org/10.4230/LIPIcs.ECRTS.2023.13 #link("https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2023.13")[ECRTS]
-]
+#v(-5mm)#list(marker: "•", spacing:1em,
+  [Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. _*Low-Overhead Online Assessment of Timely Progress as a System Commodity*_. In 35th Euromicro Conference on Real-Time Systems (ECRTS 2023). Leibniz International Proceedings in Informatics (LIPIcs), Volume 262, pp. 13:1-13:26, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2023) https://doi.org/10.4230/LIPIcs.ECRTS.2023.13 #link("https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2023.13")[ECRTS]],
+
+  [Francesco Ciraolo, Mattia Nicolella, *Patrick Carpanedo*, Denis Hoornaert, Marco Caccamo, and Renato Mancuso. 2025. _*Surgical Software-less I/O Virtualization*_. In Proceedings of the 4th International Workshop on Real-time and IntelliGent Edge computing (RAGE '25). Association for Computing Machinery, New York, NY, USA, Article 10, 1–6. https://doi.org/10.1145/3722567.3727847]
+)
 
 #block[Presentation #h(2em) #move(dy: -1em)[#line(length: 35em, stroke: (dash: "dotted"))]]
 #v(-5mm)#list(marker: "•")[
-  Shahin Roozkhosh, Bassel El Mabsout, Cristiano Rodrigues, *Patrick Carpanedo*, Denis Hoornaert, Su Min Tan, Benjamin Lubin, Marco Caccamo, Sandro Pinto, and Renato Mancuso. Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing. In 2024 Technology Innovation Institute (TII) GENZERO Workshop.
+  Shahin Roozkhosh, Bassel El Mabsout, Cristiano Rodrigues, *Patrick Carpanedo*, Denis Hoornaert, Su Min Tan, Benjamin Lubin, Marco Caccamo, Sandro Pinto, and Renato Mancuso. _*Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing*_. In 2024 Technology Innovation Institute (TII) GENZERO Workshop.
 ]
 
 = Proposal Writing
