@@ -197,6 +197,14 @@ potentially provide a transparent memory profiler for offboard analysis.
 
 
 = Professional Experience
+#entry("2025-2025", link("https://www.neobotics.org/")[Neobotics], 
+       "Temp Embedded Engineer", "Boston, MA, USA", (
+  "collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
+  "conducted comprehensive research on integrated circuits, evaluated technical specifications, and communicated findings to stakeholders.",
+  "Lead procurement efforts by developing complete parts lists and defining system architecture for a full-scale autonomous driving vehicle, ensuring technical feasibility and integration requirements were met."
+))
+
+
 #entry("2019-2020", link("https://www.holycross.edu/academics/programs/theatre-and-dance/opportunities/alternate-college-theatre")[Alternate College Theatre], 
        "Student Technical Director", "Worcester, MA, USA", (
   "Collaborated with the college technical director and student scene designer to construct sets",
@@ -233,10 +241,10 @@ potentially provide a transparent memory profiler for offboard analysis.
 = Skills
 #block(breakable: false)[
 #list(marker: "•", 
-  [*Programming:* C, C++, Java, Python, SQL],
-  [*Design:* System Verilog, Verilog, CAD, PCB design, Carpentry, Additive/Subtractive Fabrication],
+  [*Programming:* C, C++, Java, Python, SQL, Scala],
+  [*Design:* SpinalHDL, Verilog, CAD, PCB design, Carpentry, Fabrication],
   [*Hardware Debugging:* Xilinx Integrated Logic Analyzer, ARM Coresight, Circuit Debugging],
-  [*System Administration:* Network Architecture, Virtual Machine Management]
+  [*System Administration:* Network Architecture, Hypervisor Management, Git, Cluster Management, Docker, Kubernetes]
 )
 ]
 = Languages

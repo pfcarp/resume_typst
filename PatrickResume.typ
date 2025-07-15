@@ -114,6 +114,7 @@
 
 
    = Research Positions
+    #v(-2mm)
     #entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
     "Researched and implemented AXI over Ethernet, integrated hardware for program phase evaluation, and maintained CPS Lab servers (e.g., MegaMind and Proxmox Cluster) to support research, collaboration, and access to development resources. Participated in pseudo-TPC meetings to review papers with the Lead P.I. and volunteered to mentor students in directed studies within the lab.",
     ))
@@ -122,6 +123,7 @@
       "Research Assistant responsible for assembling and verifying subsystems of the Beam Profile Monitor (BPM) system, ensuring electrical tolerances and timings. Debugged the BPM system through experiments, logging findings for the Lead P.I., and facilitated weekly presentations and discussions with different research groups.",
     ))
     = Teaching and Mentoring
+    #v(-2mm)
     #entry("Spring 2024 - Ongoing", link("https://www.bu.edu/")[Boston University], 
            "F1Tenth Study Mentor", "Boston, MA, USA", (
       "Assisting undergraduates with F1Tenth hardware projects, teaching electronic design basics, and ensuring safe handling of high-current and sensitive electronics.",
@@ -131,18 +133,22 @@
            "UR2PhD Mentor", link("https://www.bu.edu/cs/engage/ur2phd/")[Boston University], (
       "Developed mentoring skills, led group and individual sessions with undergraduates to create PoV Display hardware/software modules, sourced and verified components, and trained students in academic research methods.",
     ))
-    #entry("Spring 2023", link("https://www.bu.edu/")[Boston University], 
-           "PL-Ethernet Study Mentor", "Boston, MA, USA", (
-      "Taught Vivado Design Suite basics and FPGA functionality, delegated tasks for debugging FPGA-to-Processor Ethernet connectivity, and facilitated weekly meetings to evaluate undergraduate progress and goals.",
-    ))
+  
+= Work Experience
+#v(-2mm)
+#entry("2025-2025", link("https://www.neobotics.org/")[Neobotics], 
+       "Temp Embedded Engineer", "Boston, MA, USA", (
+   "designed system architecture for educational autonomous driving platform through prototyping and research",
+  "led procurement by developing parts lists and defining architecture for autonomous vehicle systems"
+))
 
 
 = Skills
 #v(-3mm)
 #list(marker: "•", 
-  [*Programming:* C, C++, Java, Python, SQL],
-  [*Design:* System Verilog, Verilog, CAD, PCB design, Carpentry, Additive/Subtractive Fabrication],
+  [*Programming:* C, C++, Java, Python, SQL, Scala],
+  [*Design:* SpinalHDL, Verilog, CAD, PCB design, Carpentry, Fabrication],
   [*Hardware Debugging:* Xilinx Integrated Logic Analyzer, ARM Coresight, Circuit Debugging],
-  [*System Administration:* Network Architecture, Virtual Machine Management]
+  [*System Administration:* Network Architecture, Hypervisor Management, Git, Cluster Management, Docker, Kubernetes]
 )
 ]
