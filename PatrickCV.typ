@@ -70,12 +70,12 @@
 ]
 #v(-5mm)
 = Education
-#otherEntry("2021 - 2025", link("https://www.bu.edu/")[Boston University], 
-       "Master's Computer Science", "MA, USA", none)
-#otherEntry("2016 - 2020", link("https://www.holycross.edu/")[College of the Holy Cross], 
-       "Bachelors of Arts in Physics", "MA, USA", none)
-#otherEntry("2012 - 2016", link("https://www.bchigh.edu/")[Boston College High School], 
-       "High School Diploma", "MA, USA", none)
+    #otherEntry("2021 - 2025", link("https://www.bu.edu/")[Boston University], 
+           "M.S. Computer Science", "MA, USA", none)
+    #otherEntry("2016 - 2020", link("https://www.holycross.edu/")[College of the Holy Cross], 
+           "B.A. in Physics", "MA, USA", none)
+    #otherEntry("2012 - 2016", link("https://www.bchigh.edu/")[Boston College High School], 
+           "High School Diploma", "MA, USA", none)
 = Research Interest
 Investigating, assembling, designing, and testing high-performance safety-critical cyber-physical systems (CPS), with
 special focus on integrating FPGAs for sensor-fusion and resource management. Also, interested in investigating practical
@@ -85,9 +85,10 @@ potentially provide a transparent memory profiler for offboard analysis.
 = Publications & Presentations
 #block[International Conference & Workshop Papers #h(2em) #move(dy: -1em)[#line(length: 35em, stroke: (dash: "dotted"))]]
 #v(-5mm)#list(marker: "•", spacing:1em,
-  [Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. _*Low-Overhead Online Assessment of Timely Progress as a System Commodity*_. In 35th Euromicro Conference on Real-Time Systems (ECRTS 2023). Leibniz International Proceedings in Informatics (LIPIcs), Volume 262, pp. 13:1-13:26, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2023) https://doi.org/10.4230/LIPIcs.ECRTS.2023.13 #link("https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2023.13")[ECRTS]],
+  [Francesco Ciraolo, Mattia Nicolella, *Patrick Carpanedo*, Denis Hoornaert, Marco Caccamo, and Renato Mancuso. 2025. _*Surgical Software-less I/O Virtualization*_. In Proceedings of the 4th International Workshop on Real-time and IntelliGent Edge computing (RAGE '25). Association for Computing Machinery, New York, NY, USA, Article 10, 1–6. https://doi.org/10.1145/3722567.3727847],
+  [Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. _*Low-Overhead Online Assessment of Timely Progress as a System Commodity*_. In 35th Euromicro Conference on Real-Time Systems (ECRTS 2023). Leibniz International Proceedings in Informatics (LIPIcs), Volume 262, pp. 13:1-13:26, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2023) https://doi.org/10.4230/LIPIcs.ECRTS.2023.13 #link("https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2023.13")[ECRTS]]
 
-  [Francesco Ciraolo, Mattia Nicolella, *Patrick Carpanedo*, Denis Hoornaert, Marco Caccamo, and Renato Mancuso. 2025. _*Surgical Software-less I/O Virtualization*_. In Proceedings of the 4th International Workshop on Real-time and IntelliGent Edge computing (RAGE '25). Association for Computing Machinery, New York, NY, USA, Article 10, 1–6. https://doi.org/10.1145/3722567.3727847]
+  
 )
 
 #block[Presentation #h(2em) #move(dy: -1em)[#line(length: 35em, stroke: (dash: "dotted"))]]
@@ -119,18 +120,18 @@ potentially provide a transparent memory profiler for offboard analysis.
 )
 
 = Research Positions
-#entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
-"Researching and implementing methods for allowing AXI over Ethernet", 
-"Integration of hardware infrastructure to evaluate and measure phases in an executing program",
-"Assembling and maintaining servers (e.g. MegaMind and Proxmox Cluster) for CPS Lab use to facilitate research and collaboration and ease the access to development boards and related software",
-"Participating in pseudo-Technical Program Committee (TPC) meetings with Lead P.I. to review papers.",
-"Volunteering to assist or lead students enrolled in directed studies inside of CPS lab."
+#entry("Spring 2022 - Summer 2025", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
+"Researched and implemented methods for allowing AXI over Ethernet on the Xilinx Zynq Ultrascale+ platform", 
+"Assisted in research to integrate Coresight infrastructure for profiling execution phases in a program",
+"Assembled and maintained servers (e.g. Ubuntu 24.04 and Proxmox Cluster) to consolidate Xilinx platforms and hardware for facilitated research and collaboration  efforts within the lab",
+"Participated in pseudo-Technical Program Committee (TPC) meetings with Lead P.I. to review papers for high tier systems conferences",
+"Volunteered to assist or lead students enrolled in directed studies inside of CPS lab."
 ))
 #entry("Summer 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
   "Research Assistant", "Worcester, MA, USA", (
   "Gathered and assembled subsystems of the Beam Profile Monitor (BPM) system",
-  "Verified electrical tolerances and timings each components of the BPM systems",
-  "Debugged the BPM system through a gamut experiments which were logged and relayed to the Lead P.I.",
+  "Verified electrical tolerances and timings each subsystems",
+  "Debugged the BPM system through a gamut of experiments using LabVIEW, oscilliscopes, and multimeters which were logged and relayed to the Lead P.I.",
   "Arranged presentations and discussions weekly on the experiment findings with a different research group"
 ))
 
@@ -156,51 +157,53 @@ potentially provide a transparent memory profiler for offboard analysis.
 )
 
 = Teaching and Mentoring
-#entry("Spring 2024 - Ongoing", link("https://www.bu.edu/")[Boston University], 
+#entry("Spring 2024 - Summer 2025", link("https://www.bu.edu/")[Boston University], 
        "F1Tenth Directed Study Mentor", "Boston, MA, USA", (
-  "Assisting undergraduates with hardware associated with F1tenth related projects",
-  "Teaching undergraduates the basics of electronic design and electronic components",
-  "Ensuring the safety of undergraduates when handling high current and sensitive electronics"
+  "Assisted undergraduates with intregating hardware sensors (Lidar, rgb camera, optoflow) and actuators (dc motors, servos, etc) to a Jetson Nano running ROS2",
+  "Taught undergraduates the basics of electronic design and electronic components",
+  "Ensured the safety of undergraduates when handling high current and sensitive electronics"
 ))
 
 #entry("Spring 2024", link("https://www.bu.edu/")[Boston University], 
-       "Persistence of Vision Directed Study Mentor", "Boston, MA, USA", (
-  "Guiding undergraduates on designing low-level software with respect to the underlying hardware with a focus on timing requirements for a Persistence of Vision (PoV) Display",
-  "Assisting undergraduates understand and debug the gap between code and physical outputs",
-  "Customizing the circuit layout for additional features or corrections from previous student attempts"
+       "Persistence of Vision (PoV) Directed Study Mentor", "Boston, MA, USA", (
+  "Guided undergraduates on designing low-level software in C with respect to the underlying Xilinx KV260 platform  with a focus on timing requirements for a PoV Display",
+  "Assisted undergraduates to understand and debug the gap between code and physical outputs",
+  "Customized the circuit layout in Fusion360 for additional features or corrections from previous student attempts"
 ))
 
 #entry("Fall 2023", link("https://cra.org/ur2phd/")[Computing Research Association], 
        "UR2PhD Mentor", link("https://www.bu.edu/cs/engage/ur2phd/")[Boston University], (
-  "Attended weekly meeting to learn about mentoring skills and developed a mentoring style",
+  "Attended weekly meeting to learn about mentoring skills and developed an inclusive mentoring style",
   "Lead weekly individual and group meetings with four undergraduates to develop hardware/software modules for a Persistence of Vision (PoV) Display",
-  "Designed or sourced circuit boards, electrical components, and hardware after verifying compatibility and tolerances",
-  "Guided undergraduates on how to search, read, and verify academic research papers"
+  "Designed or sourced circuit boards, electrical components, and hardware after verifying compatibility and tolerances in Fusion360",
+  "Guided undergraduates on academic practices to search, read, and verify academic research papers"
 ))
 
 #entry("Spring 2023", link("https://www.bu.edu/")[Boston University], 
        "PL-Ethernet Directed Study Mentor", "Boston, MA, USA", (
   "Taught undergraduates the basics of Vivado Design Suite and functions of FPGAs",
-  "Delegated tasks to undergraduates in order to debug and learn about Processor, FPGA, and ethernet Connectivity",
-  "Arranged weekly meeting to discuss undergraduate findings on particular modules and board designs while evaluating the proceeding goals"
+  "Delegated tasks to undergraduates in order to debug and learn about Processor Subsytem, Programmable logic, and ethernet functionality",
+  "Arranged weekly meeting to discuss undergraduate findings on particular modules and block designs while evaluating the proceeding goals"
 ))
 
 = Affiliations
 #grid(
-  columns: 2,
-  gutter: 1fr,
+  columns: 3,
+  align: (center, center, center),
+  gutter: 33%,
   [#link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab]],
-  [#link("http://alterbytecorp.com/")[Alter Byte Corp]]
+  [#link("http://alterbytecorp.com/")[Alter Byte Corp]],
+  [#link("https://neobotics.org/")[Neobotics]]
 )
 #v(1mm)
 
 
 
 = Professional Experience
-#entry("2025-2025", link("https://www.neobotics.org/")[Neobotics], 
+#entry("June - July 2025", link("https://www.neobotics.org/")[Neobotics], 
        "Temp Embedded Engineer", "Boston, MA, USA", (
-  "collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
-  "conducted comprehensive research on integrated circuits, evaluated technical specifications, and communicated findings to stakeholders.",
+  "Collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
+  "Conducted comprehensive research on integrated circuits, evaluated technical specifications, developed a central KiCad project, and communicated findings to stakeholders.",
   "Lead procurement efforts by developing complete parts lists and defining system architecture for a full-scale autonomous driving vehicle, ensuring technical feasibility and integration requirements were met."
 ))
 
@@ -216,7 +219,7 @@ potentially provide a transparent memory profiler for offboard analysis.
 #entry("2019-2020", link("https://www.holycross.edu/academics/programs/theatre-and-dance/facilities")[College of the Holy Cross Fenwick Theatre], 
        "Shop Assistant", "Worcester, MA, USA", (
   "Assisted in creating sets for the department plays by following a schematic, manufacturing, and assembling components, and compensating for any error along the way",
-  "Guided assistants on correct use of tools and provided advanced techniques to address certain cases",
+  "Guided assistants on correct use of power tools and provided advanced techniques to address certain cases",
   "Relayed instructions from Technical Director to sub group(s)",
   "Provided assistance to other technical teams within the theatre"
 ))
@@ -241,17 +244,18 @@ potentially provide a transparent memory profiler for offboard analysis.
 = Skills
 #block(breakable: false)[
 #list(marker: "•", 
-  [*Programming:* C, C++, Java, Python, SQL, Scala],
-  [*Design:* SpinalHDL, Verilog, CAD, PCB design, Carpentry, Fabrication],
+  [*Programming:* C, C++, Java, Python, Golang, SQL, Scala, SpinalHDL, Nix],
+  [*Design:* SpinalHDL, Verilog, CAD, PCB design, Carpentry, Fabrication, Machining],
+  [*Machnine Learning:* Tflite-micro, Openvino],
   [*Hardware Debugging:* Xilinx Integrated Logic Analyzer, ARM Coresight, Circuit Debugging],
-  [*System Administration:* Network Architecture, Hypervisor Management, Git, Cluster Management, Docker, Kubernetes]
+  [*System Administration:* Network Architecture, Proxmox, Incus, Kubernetes, Docker, Git, Cluster Management]
 )
 ]
 = Languages
 #grid(
   columns: 3,
-  align: (left, center, right),
-  gutter: 135pt,
+  align: (center, center, center),
+  gutter: 33%,
   [*English* [Native]],
   [*Portuguese* [Fluent]],
   [*Spanish* [Fluent]]

@@ -62,30 +62,27 @@
       #link("https://github.com/pfcarp")[github.com/pfcarp] \
       
       Boston, MA
-      #v(5mm)
-      *English* [Native],
-      *Portuguese* [Fluent],
-      *Spanish* [Fluent]
+     
     ]
     #v(-5mm)
   ],
   [
     = Education
     #otherEntry("2021 - 2025", link("https://www.bu.edu/")[Boston University], 
-           "Master's Computer Science", "MA, USA", none)
+           "M.S. Computer Science", "MA, USA", none)
     #otherEntry("2016 - 2020", link("https://www.holycross.edu/")[College of the Holy Cross], 
-           "Bachelors of Arts in Physics", "MA, USA", none)
-    #otherEntry("2012 - 2016", link("https://www.bchigh.edu/")[Boston College High School], 
-           "High School Diploma", "MA, USA", none)
+           "B.A. in Physics", "MA, USA", none)
+
   ])
   #v(-5mm)
   = Publications & Presentations
   #v(-2mm)
 #block[International Conference & Workshop Papers #h(2em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
 #v(-6mm)#list(marker: "•", spacing:0.75em,
-  [Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. _*Low-Overhead Online Assessment of Timely Progress as a System Commodity*_. https://doi.org/10.4230/LIPIcs.ECRTS.2023.13],
+  [Francesco Ciraolo, Mattia Nicolella, *Patrick Carpanedo*, Denis Hoornaert, Marco Caccamo, and Renato Mancuso. 2025. _*Surgical Software-less I/O Virtualization*_. https://doi.org/10.1145/3722567.3727847],
 
-  [Francesco Ciraolo, Mattia Nicolella, *Patrick Carpanedo*, Denis Hoornaert, Marco Caccamo, and Renato Mancuso. 2025. _*Surgical Software-less I/O Virtualization*_. https://doi.org/10.1145/3722567.3727847]
+  [Weifan Chen, Ivan Izhbirdeev, Denis Hoornaert, Shahin Roozkhosh, *Patrick Carpanedo*, Sanskriti Sharma, and Renato Mancuso. _*Low-Overhead Online Assessment of Timely Progress as a System Commodity*_. https://doi.org/10.4230/LIPIcs.ECRTS.2023.13]
+
 )
 #v(-1mm)
 #block[Presentation #h(1em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
@@ -115,40 +112,42 @@
 
    = Research Positions
     #v(-2mm)
-    #entry("Spring 2022 - ongoing", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
-    "Researched and implemented AXI over Ethernet, integrated hardware for program phase evaluation, and maintained CPS Lab servers (e.g., MegaMind and Proxmox Cluster) to support research, collaboration, and access to development resources. Participated in pseudo-TPC meetings to review papers with the Lead P.I. and volunteered to mentor students in directed studies within the lab.",
+    #entry("Spring 2022 - Summer 2025", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
+    "Researched and implemented AXI over Ethernet on Zynq ultrascale+ platforms, assisted in integrating Coresight for program phase evaluation, Participated in pseudo-TPC meetings to review papers with the Lead P.I., and volunteered to mentor students in directed studies within the lab.",
+    "Maintained CPS Lab servers (e.g.Proxmox Cluster and supporting container infrastructure) to support research, collaboration, and access to development resources."
     ))
     #entry("Summer 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
       "Research Assistant", "Worcester, MA, USA", (
-      "Research Assistant responsible for assembling and verifying subsystems of the Beam Profile Monitor (BPM) system, ensuring electrical tolerances and timings. Debugged the BPM system through experiments, logging findings for the Lead P.I., and facilitated weekly presentations and discussions with different research groups.",
+      "Assembled and verified electrical tolerances and timings for subsystems of a custom Beam Profile Monitor (BPM). Evaluated the BPM system through experiments with LabView and oscilloscopes, logged findings, and facilitated weekly presentations and discussions with other research groups.",
     ))
     = Teaching and Mentoring
     #v(-2mm)
-    #entry("Spring 2024 - Ongoing", link("https://www.bu.edu/")[Boston University], 
+    #entry("Spring 2024 - Summer 2025", link("https://www.bu.edu/")[Boston University], 
            "F1Tenth Study Mentor", "Boston, MA, USA", (
-      "Assisting undergraduates with F1Tenth hardware projects, teaching electronic design basics, and ensuring safe handling of high-current and sensitive electronics.",
+      "Assisted undergraduates with F1Tenth hardware integration on Jetson Nano with ROS2, taught electronic design basics, and ensured safe handling of high-current and sensitive electronics.",
     ))
  
     #entry("Fall 2023", link("https://cra.org/ur2phd/")[Computing Research Association], 
            "UR2PhD Mentor", link("https://www.bu.edu/cs/engage/ur2phd/")[Boston University], (
-      "Developed mentoring skills, led group and individual sessions with undergraduates to create PoV Display hardware/software modules, sourced and verified components, and trained students in academic research methods.",
+      "Developed mentoring skills, led group and individual sessions with undergraduates to create PoV Display hardware/software modules for the KV260, sourced and verified components, and trained students in academic research methods.",
     ))
   
 = Work Experience
 #v(-2mm)
-#entry("2025-2025", link("https://www.neobotics.org/")[Neobotics], 
+#entry("June - July 2025", link("https://www.neobotics.org/")[Neobotics], 
        "Temp Embedded Engineer", "Boston, MA, USA", (
-   "designed system architecture for educational autonomous driving platform through prototyping and research",
-  "led procurement by developing parts lists and defining architecture for autonomous vehicle systems"
+   "Designed system architecture for educational autonomous driving platform through prototyping and research.",
+  "Led procurement by developing parts lists and defining architecture for autonomous vehicle systems."
 ))
 
 
 = Skills
-#v(-3mm)
+#v(-2mm)
 #list(marker: "•", 
-  [*Programming:* C, C++, Java, Python, SQL, Scala],
+  [*Languages:* *English* [Native], *Portuguese* [Fluent],  *Spanish* [Fluent]],
+  [*Programming:* C, C++, Java, Python, Golang, SpinalHDL, SQL, Scala],
   [*Design:* SpinalHDL, Verilog, CAD, PCB design, Carpentry, Fabrication],
   [*Hardware Debugging:* Xilinx Integrated Logic Analyzer, ARM Coresight, Circuit Debugging],
-  [*System Administration:* Network Architecture, Hypervisor Management, Git, Cluster Management, Docker, Kubernetes]
+  [*System Administration:* Network Architecture, Proxmox, Incus, Kubernetes, Docker, Git, Cluster Management]
 )
 ]
