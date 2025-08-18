@@ -134,7 +134,7 @@
   
 = Work Experience
 #v(-2mm)
-#entry("June - July 2025", link("https://www.neobotics.org/")[Neobotics], 
+#entry("June 2025 - July 2025", link("https://www.neobotics.org/")[Neobotics], 
        "Temp Embedded Engineer", "Boston, MA, USA", (
    "Designed system architecture for educational autonomous driving platform through prototyping and research.",
   "Led procurement by developing parts lists and defining architecture for autonomous vehicle systems."

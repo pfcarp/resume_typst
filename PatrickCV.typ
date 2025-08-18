@@ -224,7 +224,7 @@ potentially provide a transparent memory profiler for offboard analysis.
   "Provided assistance to other technical teams within the theatre"
 ))
 
-#entry("Fall 2017-2019", link("https://www.holycross.edu/campus-life/housing")[College of the Holy Cross], 
+#entry("Fall 2017 - Fall 2019", link("https://www.holycross.edu/campus-life/housing")[College of the Holy Cross], 
        "Resident Assistant", "Worcester, MA, USA", (
   "Acted as a resource to and ensured the safety of 38 students in their residence hall",
   "Planned events with Resident Assistant team members for residents and building",
