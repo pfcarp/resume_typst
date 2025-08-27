@@ -131,7 +131,7 @@ potentially provide a transparent memory profiler for offboard analysis.
   "Research Assistant", "Worcester, MA, USA", (
   "Gathered and assembled subsystems of the Beam Profile Monitor (BPM) system",
   "Verified electrical tolerances and timings each subsystems",
-  "Debugged the BPM system through a gamut of experiments using LabVIEW, oscilliscopes, and multimeters which were logged and relayed to the Lead P.I.",
+  "Debugged the BPM system through a gamut of experiments using LabVIEW, oscilloscopes, and multimeters which were logged and relayed to the Lead P.I.",
   "Arranged presentations and discussions weekly on the experiment findings with a different research group"
 ))
 
@@ -201,7 +201,7 @@ potentially provide a transparent memory profiler for offboard analysis.
 
 = Professional Experience
 #entry("June - July 2025", link("https://www.neobotics.org/")[Neobotics], 
-       "Temp Embedded Engineer", "Boston, MA, USA", (
+       "Embedded Engineer", "Boston, MA, USA", (
   "Collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
   "Conducted comprehensive research on integrated circuits, evaluated technical specifications, developed a central KiCad project, and communicated findings to stakeholders.",
   "Lead procurement efforts by developing complete parts lists and defining system architecture for a full-scale autonomous driving vehicle, ensuring technical feasibility and integration requirements were met."

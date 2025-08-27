@@ -89,56 +89,45 @@
 #v(-6mm)#list(marker: "•")[
   Shahin Roozkhosh, Bassel El Mabsout, Cristiano Rodrigues, *Patrick Carpanedo*, Denis Hoornaert, Su Min Tan, Benjamin Lubin, Marco Caccamo, Sandro Pinto, and Renato Mancuso. Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing. In 2024 Technology Innovation Institute (TII) GENZERO Workshop.
 ]
-#v(-1mm)
-= Notable Research
-#v(-2mm)
+#block[Thesis #h(1em) #move(dy: -1em)[#line(length: 25em, stroke: (dash: "dotted"))]]
+#v(-5mm)
 #list(
-  marker: ">",
-  "AXI over Ethernet" + block[#move(dy: -.75em)[#line(length: 25em, stroke: (dash:"dotted"))]] + v(-5mm) +
-  block(
-    list(marker: "",
-      "This work revolves around using Programmable Logic to export bus-level memory transactions packed into an Ethernet frame to allow methods (e.g. Control Flow Integrity checks, Digital Twinning, and Direct Memory Access) to be processed remotely without kernel intervention."
-    )
-  )+v(1mm),
-  "Burning Fetch Execution: A Framework for Zero-Trust Multi-Party Confidential Computing"+ block[#move(dy: -.75em)[#line(length: 25em, stroke: (dash:"dotted"))]] + v(-5mm)+
-  block(
-    list(marker: "",
-      "This work tackles the gap in existing safeguarding technology by avoiding byte-level decryption until it is immediately fetched by the processor, by performing on-the-fetch data decryption, immediately followed by erasing right after processing cycles."
-    )
-  )
+  [*AXI over Ethernet* : This work revolves around using Programmable Logic to export bus-level memory transactions packed into an Ethernet frame to allow methods (e.g. Control Flow Integrity checks, Digital Twinning, and Direct Memory Access) to be processed remotely without kernel intervention.
+  ] 
 )
-
-
-
-   = Research Positions
+= Work Experience
     #v(-2mm)
-    #entry("Spring 2022 - Summer 2025", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
-    "Researched and implemented AXI over Ethernet on Zynq ultrascale+ platforms, assisted in integrating Coresight for program phase evaluation, Participated in pseudo-TPC meetings to review papers with the Lead P.I., and volunteered to mentor students in directed studies within the lab.",
-    "Maintained CPS Lab servers (e.g.Proxmox Cluster and supporting container infrastructure) to support research, collaboration, and access to development resources."
+    #entry("June 2025 - August 2025", link("https://www.neobotics.org/")[Neobotics], 
+       "Embedded Engineer", "Boston, MA, USA", (
+   "Collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
+  "Conducted comprehensive research on integrated circuits, evaluated technical specifications, developed a central KiCad project, and communicated findings to stakeholders.",
+  "Lead procurement efforts by developing complete parts lists and defining system architecture for a full-scale autonomous driving vehicle, ensuring technical feasibility and integration requirements were met."
+))
+    #entry("January 2022 - August 2025", link("https://cpslab.bu.edu/")[Cyber Physical Systems Lab], "Masters Student Researcher", "Boston, MA, USA", (
+    "Researched and implemented methods for allowing AXI over Ethernet on the Xilinx Zynq Ultrascale+ platform", 
+"Assisted in research to integrate Coresight infrastructure for profiling execution phases in a program",
+"Assembled and maintained servers (e.g. Ubuntu 24.04 and Proxmox Cluster) to consolidate Xilinx platforms and hardware for facilitated research and collaboration  efforts within the lab",
+"Participated in pseudo-Technical Program Committee (TPC) meetings with Lead P.I. to review papers for high tier systems conferences",
+"Volunteered to assist or lead students enrolled in directed studies inside of CPS lab."
     ))
-    #entry("Summer 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
+    #entry("May 2019 - July 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
       "Research Assistant", "Worcester, MA, USA", (
       "Assembled and verified electrical tolerances and timings for subsystems of a custom Beam Profile Monitor (BPM). Evaluated the BPM system through experiments with LabView and oscilloscopes, logged findings, and facilitated weekly presentations and discussions with other research groups.",
     ))
     = Teaching and Mentoring
     #v(-2mm)
-    #entry("Spring 2024 - Summer 2025", link("https://www.bu.edu/")[Boston University], 
+    #entry("January 2024 - August 2025", link("https://www.bu.edu/")[Boston University], 
            "F1Tenth Study Mentor", "Boston, MA, USA", (
       "Assisted undergraduates with F1Tenth hardware integration on Jetson Nano with ROS2, taught electronic design basics, and ensured safe handling of high-current and sensitive electronics.",
     ))
  
-    #entry("Fall 2023", link("https://cra.org/ur2phd/")[Computing Research Association], 
+    #entry("August 2023 -  December 2023", link("https://cra.org/ur2phd/")[Computing Research Association], 
            "UR2PhD Mentor", link("https://www.bu.edu/cs/engage/ur2phd/")[Boston University], (
       "Developed mentoring skills, led group and individual sessions with undergraduates to create PoV Display hardware/software modules for the KV260, sourced and verified components, and trained students in academic research methods.",
     ))
   
-= Work Experience
-#v(-2mm)
-#entry("June 2025 - July 2025", link("https://www.neobotics.org/")[Neobotics], 
-       "Temp Embedded Engineer", "Boston, MA, USA", (
-   "Designed system architecture for educational autonomous driving platform through prototyping and research.",
-  "Led procurement by developing parts lists and defining architecture for autonomous vehicle systems."
-))
+
+
 
 
 = Skills
