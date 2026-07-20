@@ -97,6 +97,12 @@
 )
 = Work Experience
     #v(-2mm)
+    #entry("October 2025 - Present", link("https://www.northeastern.edu/")[Northeastern University], 
+       "Electronic Instrument Technician", "Boston, MA, USA", (
+    "Advising IPL Directors and IPL Supervisor with evaluation and upgrades of laboratory equipment and instrumentation. Maintain CAD drawings archive of experimental parts.",
+    "Maintaining, troubleshooting, and repairing equipment and instrumentation used in the IPL",
+    "Assembling various custom and standard computational and electrical platforms for Research within the department"
+))
     #entry("June 2025 - August 2025", link("https://www.neobotics.org/")[Neobotics], 
        "Embedded Engineer", "Boston, MA, USA", (
    "Collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
@@ -107,13 +113,13 @@
     "Researched and implemented methods for allowing AXI over Ethernet on the Xilinx Zynq Ultrascale+ platform", 
 "Assisted in research to integrate Coresight infrastructure for profiling execution phases in a program",
 "Assembled and maintained servers (e.g. Ubuntu 24.04 and Proxmox Cluster) to consolidate Xilinx platforms and hardware for facilitated research and collaboration  efforts within the lab",
-"Participated in pseudo-Technical Program Committee (TPC) meetings with Lead P.I. to review papers for high tier systems conferences",
-"Volunteered to assist or lead students enrolled in directed studies inside of CPS lab."
+"Participated in pseudo-Technical Program Committee (TPC) meetings with Lead P.I. to review papers for high-tier systems conferences",
+// "Volunteered to assist or lead students enrolled in directed studies inside of CPS lab."
     ))
-    #entry("May 2019 - July 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
-      "Research Assistant", "Worcester, MA, USA", (
-      "Assembled and verified electrical tolerances and timings for subsystems of a custom Beam Profile Monitor (BPM). Evaluated the BPM system through experiments with LabView and oscilloscopes, logged findings, and facilitated weekly presentations and discussions with other research groups.",
-    ))
+    // #entry("May 2019 - July 2019", link("https://www.holycross.edu/academics/research/student-research/summer-research")[College of the Holy Cross], 
+    //   "Research Assistant", "Worcester, MA, USA", (
+    //   "Assembled and verified electrical tolerances and timings for subsystems of a custom Beam Profile Monitor (BPM). Evaluated the BPM system through experiments with LabView and oscilloscopes, logged findings, and facilitated weekly presentations and discussions with other research groups.",
+    // ))
     = Teaching and Mentoring
     #v(-2mm)
     #entry("January 2024 - August 2025", link("https://www.bu.edu/")[Boston University], 

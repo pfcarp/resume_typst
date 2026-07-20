@@ -200,6 +200,12 @@ potentially provide a transparent memory profiler for offboard analysis.
 
 
 = Professional Experience
+#entry("October 2025 - Present", link("https://www.northeastern.edu/")[Northeastern University], 
+       "Electronic Instrument Technician", "Boston, MA, USA", (
+    "Advising IPL Directors and IPL Supervisor with evaluation and upgrades of laboratory equipment and instrumentation. Maintain CAD drawings archive of experimental parts.",
+    "Maintaining, troubleshooting, and repairing equipment and instrumentation used in the IPL",
+    "Assembling various custom and standard computational and electrical platforms for Research within the department"
+))
 #entry("June - July 2025", link("https://www.neobotics.org/")[Neobotics], 
        "Embedded Engineer", "Boston, MA, USA", (
   "Collaborated with a cross-functional team to design system architecture for an educational autonomous driving platform through prototyping, research, and strategic planning.",
